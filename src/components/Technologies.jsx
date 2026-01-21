@@ -1,4 +1,10 @@
 import React from 'react';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Autoplay } from 'swiper/modules';
+
+// Swiper styles
+import 'swiper/css';
+import 'swiper/css/autoplay';
 
 const Technologies = () => {
     const techs = [
@@ -8,24 +14,58 @@ const Technologies = () => {
         { icon: 'fas fa-network-wired', name: 'REST APIs' },
         { icon: 'fas fa-database', name: 'MySQL / PostgreSQL' },
         { icon: 'fas fa-stream', name: 'Redis / Kafka' },
-        { icon: 'fab fa-docker', name: 'Docker / Cloud' }
+        { icon: 'fab fa-docker', name: 'Docker / Cloud' },
+        { icon: 'fab fa-aws', name: 'AWS' },
+        { icon: 'fab fa-python', name: 'Python' },
     ];
 
     return (
-        <section id="technologies" className="section-padding">
+        <section id="technologies" className="section-padding technologies-section">
             <div className="container">
                 <h2>Technologies We Use</h2>
-                <div className="tech-grid">
+
+                <Swiper
+                    modules={[Autoplay]}
+                    loop={true}
+                    centeredSlides={true}
+                    grabCursor={true}
+                    speed={1200} // smooth slide transition
+                    autoplay={{
+                        delay: 1000, // pause between slides
+                        disableOnInteraction: false,
+                        pauseOnMouseEnter: false,
+                    }}
+                    spaceBetween={30}
+                    slidesPerView={1}
+                    breakpoints={{
+                        640: {
+                            slidesPerView: 2,
+                            spaceBetween: 20,
+                        },
+                        768: {
+                            slidesPerView: 3,
+                            spaceBetween: 40,
+                        },
+                        1024: {
+                            slidesPerView: 5,
+                            spaceBetween: 50,
+                        },
+                    }}
+                    className="tech-swiper"
+                >
                     {techs.map((tech, index) => (
-                        <div className="tech-item" key={index}>
-                            <i className={tech.icon}></i>
-                            <span>{tech.name}</span>
-                        </div>
+                        <SwiperSlide key={index} className="tech-slide">
+                            <div className="tech-item">
+                                <i className={tech.icon}></i>
+                                <span>{tech.name}</span>
+                            </div>
+                        </SwiperSlide>
                     ))}
-                </div>
+                </Swiper>
             </div>
         </section>
     );
 };
 
 export default Technologies;
+

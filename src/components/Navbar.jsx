@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
+import logo from '../assets/averdev.png';
 
 const Navbar = () => {
     const [isScrolled, setIsScrolled] = useState(false);
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [activeSection, setActiveSection] = useState('home');
-
     // Sticky Header Logic
     useEffect(() => {
         const handleScroll = () => {
@@ -51,7 +51,9 @@ const Navbar = () => {
     return (
         <header className={isScrolled ? 'scrolled' : ''}>
             <div className="container">
-                <a href="#home" className="logo" onClick={closeMenu}>Aver<span>dev</span>.</a>
+                <a href="#home" className="logo-container" onClick={closeMenu}>
+                    <img src={logo} alt="AverDev Logo" className="logo-img" style={{ padding: '10px 0', display: 'inline-block' }} />
+                </a>
 
                 <nav>
                     <ul className={`nav-menu ${isMenuOpen ? 'active' : ''}`}>
