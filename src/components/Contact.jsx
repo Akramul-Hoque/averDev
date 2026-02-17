@@ -26,7 +26,7 @@ const Contact = () => {
                             </li>
                             <li>
                                 <i className="fas fa-map-marker-alt"></i>
-                                <span>Jomoj road, kuril , dhaka, bangladesh</span>
+                                <span>Jomoj Road, Kuril, Dhaka, Bangladesh</span>
                             </li>
                         </ul>
                     </div>

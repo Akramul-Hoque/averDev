@@ -28,23 +28,23 @@ const Stats = () => {
     const team = useCounter(25);     // Random-ish number for team
 
     return (
-        <section className="section-padding bg-dark text-light" style={{ borderTop: '1px solid #333', borderBottom: '1px solid #333' }}>
+        <section className="section-padding bg-section-ash text-light" style={{ borderTop: '1px solid #333', borderBottom: '1px solid #333' }}>
             <div className="container">
                 <div className="stats-grid">
                     <div className="stat-item">
                         <i className="fas fa-users" style={{ fontSize: '3rem', color: 'var(--accent-color)', marginBottom: '1rem' }}></i>
                         <h2 style={{ fontSize: '3.5rem', color: 'var(--text-light)', marginBottom: '0.5rem' }}>{clients}+</h2>
-                        <p style={{ fontSize: '1.2rem', color: 'var(--text-gray)' }}>Happy Clients</p>
+                        <p style={{ fontSize: '1.2rem', color: 'rgba(255, 255, 255, 0.7)' }}>Happy Clients</p>
                     </div>
                     <div className="stat-item">
                         <i className="fas fa-user-shield" style={{ fontSize: '3rem', color: 'var(--accent-color)', marginBottom: '1rem' }}></i>
                         <h2 style={{ fontSize: '3.5rem', color: 'var(--text-light)', marginBottom: '0.5rem' }}>{team}+</h2>
-                        <p style={{ fontSize: '1.2rem', color: 'var(--text-gray)' }}>Expert Team Members</p>
+                        <p style={{ fontSize: '1.2rem', color: 'rgba(255, 255, 255, 0.7)' }}>Expert Team Members</p>
                     </div>
                     <div className="stat-item">
                         <i className="fas fa-project-diagram" style={{ fontSize: '3rem', color: 'var(--accent-color)', marginBottom: '1rem' }}></i>
                         <h2 style={{ fontSize: '3.5rem', color: 'var(--text-light)', marginBottom: '0.5rem' }}>{useCounter(50)}+</h2>
-                        <p style={{ fontSize: '1.2rem', color: 'var(--text-gray)' }}>Projects Completed</p>
+                        <p style={{ fontSize: '1.2rem', color: 'rgba(255, 255, 255, 0.7)' }}>Projects Completed</p>
                     </div>
                 </div>
             </div>

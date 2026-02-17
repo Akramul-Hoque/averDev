@@ -5,7 +5,7 @@ const Footer = () => {
         <footer>
             <div className="container footer-grid">
                 <div className="footer-col brand-col">
-                    <h3>Averdev.</h3>
+                    <h3>Averdev</h3>
                     <p>Empowering businesses with scalable, secure, and modern software solutions. Your vision, our code.</p>
                     <div className="social-links">
                         <a href="#" aria-label="Facebook"><i className="fab fa-facebook-f"></i></a>

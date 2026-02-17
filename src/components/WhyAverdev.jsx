@@ -10,9 +10,9 @@ const WhyAverdev = () => {
     ];
 
     return (
-        <section id="why-averdev" className="section-padding bg-dark text-light">
+        <section id="why-averdev" className="section-padding bg-section-ash text-light">
             <div className="container">
-                <h2 style={{ color: 'white' }}>Why Averdev?</h2>
+                <h2 style={{ color: 'white' }}>Why Averdev</h2>
                 <div className="features-grid">
                     {features.map((feature, index) => (
                         <div className="feature-item" key={index}>

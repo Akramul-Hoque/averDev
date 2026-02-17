@@ -31,7 +31,7 @@ const Technologies = () => {
                     grabCursor={true}
                     speed={1200} // smooth slide transition
                     autoplay={{
-                        delay: 1000, // pause between slides
+                        delay: 1500, // pause between slides
                         disableOnInteraction: false,
                         pauseOnMouseEnter: false,
                     }}
