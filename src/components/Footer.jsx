@@ -40,11 +40,11 @@ const Footer = () => {
                     <ul>
                         <li>
                             <i className="fas fa-map-marker-alt"></i>
-                            <span>Jomoj road, kuril , dhaka, bangladesh</span>
+                            <span>Jomoj road, Kuril , Dhaka, Bangladesh</span>
                         </li>
                         <li>
                             <i className="fas fa-envelope"></i>
-                            <span>mail@everdev.com</span>
+                            <span>[EMAIL_ADDRESS]</span>
                         </li>
                         <li>
                             <i className="fas fa-phone"></i>
